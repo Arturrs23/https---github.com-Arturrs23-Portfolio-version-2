@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.typekit.net/sns2tud.css" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link href="/assets/css/style.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <!-- loading page -->
+    <div class="loading" delay-hide="3000"></div>
+    <!-- first page -->
+    <div class="page one">
+      <!-- first img / first container -->
+      <div class="bgimg-1" id="home">
+        <!-- header -->
+        <header>
+          <div class="name-intro">
+            <h1> Hello World <span class="blinking-cursor">|</span></h1>
+          </div>
+        </header>
+        <!-- scroll down button -->
+        <section id="section06" class="demo">
+          <a href="#section06" onclick="scrollWin()"><span></span></a>
+        </section>
+        <!-- overlay with stars-->
+        <div class="overlay">
+          <div class="stars"></div>
+          <div class="twinkling"></div>
+        </div>
+      </div>
+    </div>
+    <!-- page one end -->
+  </div>
+  <!-- PAGE number two -->
+  <div class="page two" id="page-two">
+    <!-- socials on page two -->
+    <div id="social-two" class="social-menu">
+      <ul>
+        <li><a href="https://www.instagram.com/nazinskis123/?hl=en" target="blank"><i class="fab fa-instagram"></i></a>
+        </li>
+        <li><a href="https://www.linkedin.com/in/art%C5%ABrs-torsters-51371721a/" target="blank"><i
+              class="fab fa-linkedin-in"></i></a></li>
+        <li><a href="https://www.facebook.com/arthur.englandd" target="blank"><i class="fab fa-facebook"></i></a></li>
+      </ul>
+    </div>
+    <!-- page two text -->
+    <p class="about-me-text-one">I'm <span class="extra">Artūrs</span>
+      <!-- <p class="intro-text">| Front-end web developer |</p> -->
+    </p>
+    <p class="about-me-text-two">Highly motivated front-end developer with international client portfolio. I started
+      to learn programming on my own at age 28, from an old book and with no computer. Driven and permanently curious,
+      I am now specialized in fixing front-end issues that other technology providers can't manage.</p>
+    <section class="what-i">
+
+    </section>
+    <!-- profile image with glitch effect  -->
+    <span class="profile-image" id="about-me">
+      <div class="glitch"></div>
+      <!-- icons -->
+      <section class="work-icons">
+        <i class="fab fa-html5">
+          <p class="icon-text">HTML5</p>
+        </i>
+        <i class="fab fa-css3">
+          <p class="icon-text">CSS</p>
+        </i>
+        <i class="fab fa-js">
+          <p class="icon-text">Javascript</p>
+        </i>
+        <i class="fas fa-laptop-code">
+          <p class="icon-text">Responsive design</p>
+        </i>
+      </section>
+    </span>
+    <!-- scroll down button -->
+    <!-- <section id="section06" class="demo">
+      <a href="#about-me"><span></span></a>
+    </section> -->
+  </div>
+  <!-- PAGE number three -->
+  <div class="page three">
+    <!-- socials on page three -->
+    <div id="social-two" class="social-menu">
+      <ul>
+        <li><a href="https://www.instagram.com/nazinskis123/?hl=en" target="blank"><i class="fab fa-instagram"></i></a>
+        </li>
+        <li><a href="https://www.linkedin.com/in/art%C5%ABrs-torsters-51371721a/" target="blank"><i
+              class="fab fa-linkedin-in"></i></a></li>
+        <li><a href="https://www.facebook.com/arthur.englandd" target="blank"><i class="fab fa-facebook"></i></a></li>
+      </ul>
+    </div>
+    <!-- carousel with cards -->
+    <div class="carousel">
+      <input type="radio" name="slider" id="item-1" checked />
+      <input type="radio" name="slider" id="item-2" />
+      <input type="radio" name="slider" id="item-3" />
+      <div class="cards">
+        <!-- first card -->
+        <label class="card" for="item-1" id="song-1">
+          <div class="overlay-text">
+            <div class="span-text">Sparkleheart</div>
+            <div class="span-subtext">TEST2</div>
+          </div>
+          <img class="images" src="/assets/img/Screenshot_1.png" alt="TITLE 1" />
+        </label>
+        <!-- second card -->
+        <label class="card" for="item-2" id="song-2">
+          <div class="overlay-text">
+            <div class="span-text">Sparkleheart</div>
+            <div class="span-subtext">TEST2</div>
+          </div>
+          <img class="images" src="/assets/img/Screenshot_2.png" alt="TITLE 2" />
+        </label>
+        <!-- third card -->
+        <label class="card" for="item-3" id="song-3">
+          <div class="overlay-text">
+            <div class="span-text">Sparkleheart</div>
+            <div class="span-subtext">TEST2</div>
+          </div>
+          <img class="images" src="/assets/img/Screenshot_3.png" alt="TITLE 3" />
+        </label>
+      </div>
+      <!-- The Modal with images onclick -->
+      <div id="myModal" class="modal">
+        <!-- choosing img with same class to iterate over -->
+        <img class="modal-content" id="img-1" />
+        <span class="close">&times;</span>
+        <!-- <img class="images" id="img-1" src="/assets/img/Profile picture.jpg" alt="TITLE 1" /> -->
+        <!-- <img class="images" id="img-1" src="/assets/img/intro-bg.jpg" alt="TITLE 2" /> -->
+        <!-- <img class="images" id="img-1" src="/assets/img/shutterstock_1709112340.jpg" alt="TITLE 3" /> -->
+      </div>
+
+      <!-- carousel end -->
+    </div>
+    <!-- scroll down button -->
+    <section id="section06" class="demo">
+      <a href="#about-me"><span></span></a>
+    </section>
+  </div>
+  <!-- PAGE number four -->
+  <div class="page four">
+    <!-- socials on page four -->
+    <div id="social-two" class="social-menu">
+      <ul>
+        <li><a href="https://www.instagram.com/nazinskis123/?hl=en" target="blank"><i class="fab fa-instagram"></i></a>
+        </li>
+        <li><a href="https://www.linkedin.com/in/art%C5%ABrs-torsters-51371721a/" target="blank"><i
+              class="fab fa-linkedin-in"></i></a></li>
+        <li><a href="https://www.facebook.com/arthur.englandd" target="blank"><i class="fab fa-facebook"></i></a></li>
+      </ul>
+    </div>
+    <!-- timeline -->
+    <div class="timeline">
+      <div class="container-timeline  right">
+        <div class="content">
+          <h2>2020</h2>
+          <p class="timeline-text">Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto
+            mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per,
+            habeo iusto primis ea eam.</p>
+        </div>
+      </div>
+      <div class="container-timeline left">
+        <div class="content">
+          <h2>2021</h2>
+          <p class="timeline-text">Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto
+            mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per,
+            habeo iusto primis ea eam.</p>
+        </div>
+      </div>
+      <div class="container-timeline  right">
+        <div class="content">
+          <h2>2021</h2>
+          <p class="timeline-text">Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto
+            mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per,
+            habeo iusto primis ea eam.</p>
+        </div>
+      </div>
+      <div class="container-timeline left">
+        <div class="content last">
+          <h2>2022</h2>
+          <p class="timeline-text">Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto
+            mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per,
+            habeo iusto primis ea eam.</p>
+        </div>
+      </div>
+      <!-- foot -->
+      <!-- <footer>
+        <div class="contact-block">
+          <a href="mailto:arrturs.torsters@gmail.com">contact</a>
+        </div>
+
+      </footer> -->
+    </div>
+
+
+  </div>
+  <!-- main container end -->
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <!-- script start -->
+  <script>
+    //scroll down button
+    function scrollWin() {
+      window.scrollBy(0, 1100);
+    }
+    // MODAL for carousel
+    // calling modal by ID
+    var modal = document.getElementById("myModal");
+    // Calling all images -- with getbyClass only
+    var images = document.getElementsByClassName("images");
+    // the image in the modal
+    var modalImg = document.getElementById("img-1");
+    // and the caption in the modal
+    var captionText = document.getElementById("caption");
+    // Go through all of the images with custom class
+    for (var i = 0; i < images.length; i++) {
+      var img = images[i];
+      // attach  click listener for this image on doubleclick
+      img.ondblclick = function (evt) {
+        console.log(evt);
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      };
+    }
+    //close btn
+    var span = document.getElementsByClassName("close")[0];
+    span.onclick = function () {
+      modal.style.display = "none";
+    };
+    // image fade in effect 
+    $(function () {  // $(document).ready shorthand
+      $(".images").fadeIn("slow");
+    });
+
+    $(document).ready(function () {
+
+      /* Every time the window is scrolled ... */
+      $(window).scroll(function () {
+
+        /* Check the location of each desired element */
+        $(".images").each(function (i) {
+
+          var bottom_of_object = $(this).position().top + $(this).outerHeight();
+          var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+          /* If the object is completely visible in the window, fade it it */
+          if (bottom_of_window > bottom_of_object) {
+
+            $(this).animate({ "opacity": "1" }, 4000);
+
+          }
+
+        });
+
+      });
+
+    });
+    //loading screen
+    $(document).ready(function () {
+      var loading = $(".loading");
+      loading.delay(loading.attr("delay-hide")).slideUp();
+
+    });
+    //glitch effect for prof image
+    !function (t, e, s, i) { "use strict"; function n(e, s) { this.element = e, this.settings = t.extend({}, a, s), this._defaults = a, this._name = r, this.init() } var r = "mgGlitch", a = { destroy: !1, glitch: !0, scale: !0, blend: !0, blendModeType: "hue", glitch1TimeMin: 600, glitch1TimeMax: 900, glitch2TimeMin: 10, glitch2TimeMax: 115, zIndexStart: 5 }; t.extend(n.prototype, { init: function () { this.glitch() }, glitch: function () { function e(t, e) { return Math.floor(Math.random() * (e - t + 1)) + t } function s() { var i = e(10, 1900), n = 9999, a = e(10, 1300), o = 0, h = e(0, 16), f = e(0, 16), d = e(c, l); t(r).css({ clip: "rect(" + i + "px, " + n + "px, " + a + "px," + o + "px)", right: f, left: h }), setTimeout(s, d) } function i() { var s = e(10, 1900), n = 9999, c = e(10, 1300), l = 0, f = e(0, 40), d = e(0, 40), m = e(o, h); if (a === !0) var x = (Math.random() * (1.1 - .9) + .9).toFixed(2); else if (a === !1) var x = 1; t(r).next().css({ clip: "rect(" + s + "px, " + n + "px, " + c + "px," + l + "px)", left: f, right: d, "-webkit-transform": "scale(" + x + ")", "-ms-transform": "scale(" + x + ")", transform: "scale(" + x + ")" }), setTimeout(i, m) } function n() { var s = e(10, 1900), i = 9999, c = e(10, 1300), l = 0, f = e(0, 40), d = e(0, 40), m = e(o, h); if (a === !0) var x = (Math.random() * (1.1 - .9) + .9).toFixed(2); else if (a === !1) var x = 1; t(r).next().next().css({ clip: "rect(" + s + "px, " + i + "px, " + c + "px," + l + "px)", left: f, right: d, "-webkit-transform": "scale(" + x + ")", "-ms-transform": "scale(" + x + ")", transform: "scale(" + x + ")" }), setTimeout(n, m) } var r = this.element, a = this.settings.scale, c = this.settings.glitch1TimeMin, l = this.settings.glitch1TimeMax, o = this.settings.glitch2TimeMin, h = this.settings.glitch2TimeMax, f = this.settings.zIndexStart; if (this.settings.destroy === !0) (t(r).hasClass("el-front-1") || t(r).hasClass("front-3") || t(r).hasClass("front-2")) && t(".front-1, .front-2, .front-3").remove(), t(".back").removeClass("back"); else if (this.settings.destroy === !1) { var d = t(r).clone(); if (d.insertBefore(r).addClass("back").css({ "z-index": f }), this.settings.blend === !0) { var d = t(r).clone(); d.insertAfter(r).addClass("front-3").css({ "z-index": f + 3, "mix-blend-mode": this.settings.blendModeType }), n() } if (this.settings.glitch === !0) { var d = t(r).clone(); d.insertAfter(r).addClass("front-2").css({ "z-index": f + 2 }), t(".back").next().addClass("front-1").css({ "z-index": f + 1 }), s(), i() } } } }), t.fn[r] = function (t) { return this.each(function () { new n(this, t) }) } }(jQuery, window, document);
+
+    $(function () {
+      $(".glitch").mgGlitch({
+        destroy: false,
+        glitch: true,
+        scale: false,
+        blend: true,
+        blendModeType: 'hue',
+        glitch1TimeMin: 40,
+        glitch1TimeMax: 300,
+        glitch2TimeMin: 80,
+        glitch2TimeMax: 100,
+        glitch3TimeMin: 500,
+        glitch3TimeMax: 1500,
+        glitch4TimeMin: 270,
+        glitch4TimeMax: 700,
+        zIndexStart: 2,
+      })
+    })
+
+  </script>
+  <!-- body end -->
+</body>
+
+</html>

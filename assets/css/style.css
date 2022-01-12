@@ -24,6 +24,10 @@
   margin: 0;
 }
 
+a {
+  color: white;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -99,6 +103,7 @@ body {
 }
 
 @keyframes blink {
+
   from,
   to {
     color: transparent;
@@ -110,6 +115,7 @@ body {
 }
 
 @-moz-keyframes blink {
+
   from,
   to {
     color: transparent;
@@ -121,6 +127,7 @@ body {
 }
 
 @-webkit-keyframes blink {
+
   from,
   to {
     color: transparent;
@@ -132,6 +139,7 @@ body {
 }
 
 @-ms-keyframes blink {
+
   from,
   to {
     color: transparent;
@@ -143,6 +151,7 @@ body {
 }
 
 @-o-keyframes blink {
+
   from,
   to {
     color: transparent;
@@ -326,17 +335,13 @@ body {
 }
 
 .stars {
-  background: rgb(0, 0, 0)
-    url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top
-    center;
+  background: rgb(0, 0, 0) url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
   z-index: 0;
   opacity: 1;
 }
 
 .twinkling {
-  background: transparent
-    url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat
-    top center;
+  background: transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
   -moz-animation: move-twink-back 60s linear infinite;
   -ms-animation: move-twink-back 60s linear infinite;
   -o-animation: move-twink-back 70s linear infinite;
@@ -359,7 +364,7 @@ body {
   margin: 0;
   transform: translate(-50%, -50%);
   display: flex;
-  background-color: #00ace6;
+
 }
 
 .social-menu ul li {
@@ -395,49 +400,48 @@ body {
 }
 
 /* instagram hover */
-.social-menu ul li:nth-child(1) a:hover {
+.social-menu ul li:nth-child(5) a:hover {
   background: #f09433;
-  background: -moz-linear-gradient(
-    45deg,
-    #f09433 0%,
-    #e6683c 25%,
-    #dc2743 50%,
-    #cc2366 75%,
-    #bc1888 100%
-  );
-  background: -webkit-linear-gradient(
-    45deg,
-    #f09433 0%,
-    #e6683c 25%,
-    #dc2743 50%,
-    #cc2366 75%,
-    #bc1888 100%
-  );
-  background: linear-gradient(
-    45deg,
-    #f09433 0%,
-    #e6683c 25%,
-    #dc2743 50%,
-    #cc2366 75%,
-    #bc1888 100%
-  );
+  background: -moz-linear-gradient(45deg,
+      #f09433 0%,
+      #e6683c 25%,
+      #dc2743 50%,
+      #cc2366 75%,
+      #bc1888 100%);
+  background: -webkit-linear-gradient(45deg,
+      #f09433 0%,
+      #e6683c 25%,
+      #dc2743 50%,
+      #cc2366 75%,
+      #bc1888 100%);
+  background: linear-gradient(45deg,
+      #f09433 0%,
+      #e6683c 25%,
+      #dc2743 50%,
+      #cc2366 75%,
+      #bc1888 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
 }
 
-/* linkedin hover */
+/* github hover */
 .social-menu ul li:nth-child(2) a:hover {
+  background-color: rgb(140, 47, 216);
+}
+
+/* linkedin hover */
+.social-menu ul li:nth-child(1) a:hover {
   background-color: rgb(40, 103, 178);
 }
 
 /* facebook hover */
-.social-menu ul li:nth-child(3) a:hover {
+.social-menu ul li:nth-child(4) a:hover {
   background-color: rgb(59, 89, 152);
 }
 
 #social-two {
   position: absolute;
   top: 15%;
-  left: 90%;
+  left: 85%;
   padding: 0;
   margin: 0;
   transform: translate(-50%, -50%);
@@ -512,24 +516,18 @@ h1 {
 /* second page */
 .two {
   background: #282537;
-  background-image: -webkit-radial-gradient(
-    top,
-    circle cover,
-    #2c2c2e 0%,
-    #000000 70%
-  );
-  background-image: -moz-radial-gradient(
-    top,
-    circle cover,
-    #3c3b52 0%,
-    #000000 80%
-  );
-  background-image: -o-radial-gradient(
-    top,
-    circle cover,
-    #3c3b52 0%,
-    #000000 90%
-  );
+  background-image: -webkit-radial-gradient(top,
+      circle cover,
+      #2c2c2e 0%,
+      #000000 70%);
+  background-image: -moz-radial-gradient(top,
+      circle cover,
+      #3c3b52 0%,
+      #000000 80%);
+  background-image: -o-radial-gradient(top,
+      circle cover,
+      #3c3b52 0%,
+      #000000 90%);
   background-image: radial-gradient(top, circle cover, #3c3b52 0%, #000000 00%);
   z-index: 4;
   background-size: cover;
@@ -713,24 +711,18 @@ h1 {
 /* page three */
 .three {
   background: #282537;
-  background-image: -webkit-radial-gradient(
-    top,
-    circle cover,
-    #2c2c2e 0%,
-    #000000 70%
-  );
-  background-image: -moz-radial-gradient(
-    top,
-    circle cover,
-    #3c3b52 0%,
-    #000000 80%
-  );
-  background-image: -o-radial-gradient(
-    top,
-    circle cover,
-    #3c3b52 0%,
-    #000000 90%
-  );
+  background-image: -webkit-radial-gradient(top,
+      circle cover,
+      #2c2c2e 0%,
+      #000000 70%);
+  background-image: -moz-radial-gradient(top,
+      circle cover,
+      #3c3b52 0%,
+      #000000 80%);
+  background-image: -o-radial-gradient(top,
+      circle cover,
+      #3c3b52 0%,
+      #000000 90%);
   background-image: radial-gradient(top, circle cover, #3c3b52 0%, #000000 00%);
   z-index: 3;
   background-repeat: no-repeat;
@@ -757,24 +749,18 @@ h1 {
 
 .four {
   background: #282537;
-  background-image: -webkit-radial-gradient(
-    top,
-    circle cover,
-    #2c2c2e 0%,
-    #000000 70%
-  );
-  background-image: -moz-radial-gradient(
-    top,
-    circle cover,
-    #3c3b52 0%,
-    #000000 80%
-  );
-  background-image: -o-radial-gradient(
-    top,
-    circle cover,
-    #3c3b52 0%,
-    #000000 90%
-  );
+  background-image: -webkit-radial-gradient(top,
+      circle cover,
+      #2c2c2e 0%,
+      #000000 70%);
+  background-image: -moz-radial-gradient(top,
+      circle cover,
+      #3c3b52 0%,
+      #000000 80%);
+  background-image: -o-radial-gradient(top,
+      circle cover,
+      #3c3b52 0%,
+      #000000 90%);
   background-image: radial-gradient(top, circle cover, #3c3b52 0%, #000000 00%);
 
   z-index: 2;
@@ -805,8 +791,7 @@ input[type="radio"] {
   transition: transform 0.4s ease;
   cursor: pointer;
   overflow: hidden;
-  -webkit-box-reflect: below 1px
-    linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+  -webkit-box-reflect: below 1px linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
   border-radius: 0px;
 }
 
@@ -865,51 +850,51 @@ img {
   display: block;
 }
 
-#item-1:checked ~ .cards #song-3,
-#item-2:checked ~ .cards #song-1,
-#item-3:checked ~ .cards #song-2 {
+#item-1:checked~.cards #song-3,
+#item-2:checked~.cards #song-1,
+#item-3:checked~.cards #song-2 {
   transform: translatex(-40%) scale(0.8);
   opacity: 0.4;
   z-index: 0;
 }
 
-#item-1:checked ~ .cards #song-2,
-#item-2:checked ~ .cards #song-3,
-#item-3:checked ~ .cards #song-1 {
+#item-1:checked~.cards #song-2,
+#item-2:checked~.cards #song-3,
+#item-3:checked~.cards #song-1 {
   transform: translatex(40%) scale(0.8);
   opacity: 0.4;
   z-index: 0;
 }
 
-#item-1:checked ~ .cards #song-1,
-#item-2:checked ~ .cards #song-2,
-#item-3:checked ~ .cards #song-3 {
+#item-1:checked~.cards #song-1,
+#item-2:checked~.cards #song-2,
+#item-3:checked~.cards #song-3 {
   transform: translatex(0) scale(1);
   opacity: 1;
   z-index: 1;
 }
 
-#item-1:checked ~ .cards #song-1,
-#item-2:checked ~ .cards #song-2,
-#item-3:checked ~ .cards #song-4 {
+#item-1:checked~.cards #song-1,
+#item-2:checked~.cards #song-2,
+#item-3:checked~.cards #song-4 {
   transform: translatex(0) scale(1);
   opacity: 1;
   z-index: 1;
 }
 
-#item-2:checked ~ .player #test {
+#item-2:checked~.player #test {
   transform: translateY(0);
 }
 
-#item-2:checked ~ .player #test {
+#item-2:checked~.player #test {
   transform: translateY(-40px);
 }
 
-#item-3:checked ~ .player #test {
+#item-3:checked~.player #test {
   transform: translateY(-80px);
 }
 
-#item-:checked ~ .player #test {
+#item-:checked~.player #test {
   transform: translateY(-80px);
 }
 
@@ -1091,7 +1076,7 @@ img {
 }
 
 /* BOXES hover */
-.container-timeline:hover > .content,
+.container-timeline:hover>.content,
 .left {
   opacity: 1;
 }
@@ -1132,6 +1117,7 @@ img {
 
 /* Media queries */
 @media screen and (max-width: 600px) {
+
   /* Place the timelime to the left */
   .timeline::after {
     left: 31px;
@@ -1192,6 +1178,7 @@ h2 {
 
 /* Media queries */
 @media only screen and (min-width: 280px) and (max-width: 425px) and (orientation: portrait) {
+
   /* first page */
   h1 {
     width: 100%;
@@ -1258,12 +1245,13 @@ h2 {
   .timeline-text {
     font-size: 3vw;
     line-height: 12px;
-   
+
   }
 
   .four .social-menu {
     visibility: hidden;
   }
+
   .cards {
     margin-top: 50px;
   }
@@ -1296,6 +1284,7 @@ h2 {
 
 /* iPad PORTRAIT style here */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+
   body,
   html {
     width: 100%;
@@ -1402,6 +1391,7 @@ h2 {
 
 /* Laptops, Desktops */
 @media (min-width: 1024px) and (max-width: 1280px) {
+
   body,
   html {
     width: 100%;
@@ -1501,6 +1491,7 @@ h2 {
     margin-top: 100px;
     transform: scale(0.9);
   }
+
   #img-1 {
     width: 98%;
     height: 500px;
@@ -1509,6 +1500,7 @@ h2 {
     align-items: center;
     justify-content: center;
   }
+
   .modal {
     margin-left: 0px;
     width: 130%;
@@ -1516,6 +1508,7 @@ h2 {
     background: rgba(0, 0, 0, 0.9);
     border: none;
   }
+
   .close {
     color: white;
     margin-right: 100px;
@@ -1525,11 +1518,13 @@ h2 {
 
 /* Large desktop */
 @media (min-width: 1440px) {
+
   body,
   html {
     width: 102%;
     margin: 0 auto;
   }
+
   * {
     box-sizing: border-box;
     font-family: Poppins, Montserrat;
@@ -1590,6 +1585,7 @@ h2 {
 
 /*Surafce duo portrait*/
 @media screen and (min-width: 426px) and (max-width: 600px) and (orientation: portrait) {
+
   /* first page */
   h1 {
     width: 100%;

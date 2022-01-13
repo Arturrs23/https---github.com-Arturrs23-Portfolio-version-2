@@ -176,8 +176,8 @@ body {
   width: 34px;
   height: 34px;
   margin-left: -12px;
-  border-left: 1px solid #0cbababb;
-  border-bottom: 1px solid #0cbababb;
+  border-left: 1px solid #ffffffbb;
+  border-bottom: 1px solid #ffffffbb;
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
   -webkit-animation: sdb05 1.5s infinite;
@@ -423,6 +423,22 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
 }
 
+.social-menu ul li:nth-child(3) a:hover {
+  background:
+    linear-gradient(to bottom left, transparent 49%, #fbbc05 50%) 0 25%/48% 40%,
+    linear-gradient(to top left, transparent 49%, #fbbc05 50%) 0 75%/48% 40%,
+
+    linear-gradient(-40deg, transparent 53%, #ea4335 54%),
+    linear-gradient(45deg, transparent 46%, #4285f4 48%),
+    #34a853;
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+
+}
+
 /* github hover */
 .social-menu ul li:nth-child(2) a:hover {
   background-color: rgb(140, 47, 216);
@@ -644,26 +660,6 @@ h1 {
   text-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
-
-@keyframes slide-in-anim {
-  20% {
-    opacity: 0;
-  }
-
-  60% {
-    transform: translateX(-45%);
-  }
-
-  75% {
-    transform: translateX(-52%);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateX(-30%);
-  }
-}
-
 /* what i do block */
 .fa-html5 {
   float: left;
@@ -850,53 +846,44 @@ img {
   display: block;
 }
 
-#item-1:checked~.cards #song-3,
-#item-2:checked~.cards #song-1,
-#item-3:checked~.cards #song-2 {
+#item-1:checked~.cards #work-4,
+#item-2:checked~.cards #work-1,
+#item-3:checked~.cards #work-2,
+#item-4:checked~.cards #work-3
+
+ {
   transform: translatex(-40%) scale(0.8);
   opacity: 0.4;
   z-index: 0;
 }
 
-#item-1:checked~.cards #song-2,
-#item-2:checked~.cards #song-3,
-#item-3:checked~.cards #song-1 {
+#item-1:checked~.cards #work-2,
+#item-2:checked~.cards #work-3,
+#item-3:checked~.cards #work-4,
+#item-4:checked~.cards #work-1 {
   transform: translatex(40%) scale(0.8);
   opacity: 0.4;
   z-index: 0;
 }
 
-#item-1:checked~.cards #song-1,
-#item-2:checked~.cards #song-2,
-#item-3:checked~.cards #song-3 {
+#item-1:checked~.cards #work-1,
+#item-2:checked~.cards #work-2,
+#item-3:checked~.cards #work-3,
+#item-4:checked~.cards #work-4 {
   transform: translatex(0) scale(1);
   opacity: 1;
   z-index: 1;
 }
 
-#item-1:checked~.cards #song-1,
-#item-2:checked~.cards #song-2,
-#item-3:checked~.cards #song-4 {
+#item-1:checked~.cards #work-1,
+#item-2:checked~.cards #work-2,
+#item-3:checked~.cards #work-3,
+#item-4:checked~.cards #work-4 {
   transform: translatex(0) scale(1);
   opacity: 1;
   z-index: 1;
 }
 
-#item-2:checked~.player #test {
-  transform: translateY(0);
-}
-
-#item-2:checked~.player #test {
-  transform: translateY(-40px);
-}
-
-#item-3:checked~.player #test {
-  transform: translateY(-80px);
-}
-
-#item-:checked~.player #test {
-  transform: translateY(-80px);
-}
 
 /* overlay text for img description */
 .overlay-text {
@@ -1198,6 +1185,7 @@ h2 {
   /* second page */
   .about-me-text-one {
     font-size: 40px;
+  
   }
 
   .about-me-text-two {
@@ -1210,8 +1198,10 @@ h2 {
 
   #social-two {
     transform: scale(0.5);
-    left: 70%;
-    top: 20%;
+    left: 50%;
+    top: 35%;
+
+
   }
 
   .glitch {
@@ -1308,7 +1298,7 @@ h2 {
 
   /* second page */
   .about-me-text-one {
-    font-size: 40px;
+    font-size: 60px;
   }
 
   .about-me-text-two {

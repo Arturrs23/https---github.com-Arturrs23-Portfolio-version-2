@@ -660,6 +660,7 @@ h1 {
   text-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
+
 /* what i do block */
 .fa-html5 {
   float: left;
@@ -849,9 +850,7 @@ img {
 #item-1:checked~.cards #work-4,
 #item-2:checked~.cards #work-1,
 #item-3:checked~.cards #work-2,
-#item-4:checked~.cards #work-3
-
- {
+#item-4:checked~.cards #work-3 {
   transform: translatex(-40%) scale(0.8);
   opacity: 0.4;
   z-index: 0;
@@ -1185,7 +1184,7 @@ h2 {
   /* second page */
   .about-me-text-one {
     font-size: 40px;
-  
+
   }
 
   .about-me-text-two {
@@ -1200,9 +1199,7 @@ h2 {
     transform: scale(0.5);
     left: 50%;
     top: 35%;
-
-
-  }
+}
 
   .glitch {
     background-image: url(/assets/img/prof\ chair.png);

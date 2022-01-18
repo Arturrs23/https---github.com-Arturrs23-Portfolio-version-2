@@ -473,7 +473,7 @@ h1 {
   opacity: 0.9;
   background-color: #0cbaba8f;
 
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   font-weight: 600;
   font-size: 5vw;
   display: block;
@@ -489,7 +489,7 @@ h1 {
 /* front end text */
 .intro-text {
   opacity: 0.9;
-  font-family: "lora-regular", serif;
+  font-family: "lora-regular", serif, sans-serif;
   font-size: 1.7vw;
   line-height: 2.4rem;
   text-transform: uppercase;
@@ -634,7 +634,7 @@ h1 {
   text-align: left;
   align-items: left;
   font-weight: 600;
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   text-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
   margin-top: 150px;
@@ -660,7 +660,7 @@ h1 {
   text-align: center;
   align-items: center;
   font-weight: thin;
-  font-family: Raleway-Variable;
+  font-family: Raleway-Variable, sans-serif;
   color: rgb(255, 255, 255);
   margin: 0 auto;
   margin-top: -100px;
@@ -1380,13 +1380,14 @@ h2 {
   .close {
     margin-top: 150px;
     right: 80px;
+    color: white;
   }
 
   .modal {
     margin-left: 0px;
     width: 100%;
     height: 900px;
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(0, 0, 0, 0.9);
   }
 }
 
@@ -1404,7 +1405,7 @@ h2 {
     white-space: nowrap;
     opacity: 0.9;
     background-color: #0cbaba8f;
-    font-family: Poppins;
+    font-family: Poppins, sans-serif;
     font-weight: 600;
     font-size: 5vw;
     display: block;
@@ -1526,7 +1527,7 @@ h2 {
 
   * {
     box-sizing: border-box;
-    font-family: Poppins, Montserrat;
+    font-family: Poppins, Montserrat, sans-serif;
     padding: 0;
     margin: 0;
   }
@@ -1932,7 +1933,7 @@ h2 {
 
   /* last page */
   .timeline {
-    margin-top: 140px;
+    margin-top: 90px;
     transform: scale(0.6);
   }
 
@@ -1979,5 +1980,117 @@ h2 {
   }
   .span-subtext {
     font-size: 16px;
+  }
+}
+/* iPad LANDSCAPE style here */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .page {
+    height: 768px;
+  }
+  body,
+  html {
+    width: 100%;
+  }
+
+  /* first page */
+  h1 {
+    width: 100%;
+    font-size: 60px;
+  }
+
+  .loading:after {
+    display: block;
+    margin: 0 auto;
+    margin-top: 50%;
+  }
+
+  .blinking-cursor {
+    font-size: 60px;
+  }
+
+  /* second page */
+  .about-me-text-one {
+    font-size: 60px;
+  }
+
+  .about-me-text-two {
+    font-size: 26px;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  #social-two {
+    transform: scale(0.7);
+    left: 70%;
+    top: 20%;
+  }
+
+  .glitch {
+    background-image: url(/assets/img/prof\ chair.png);
+    background-position: right;
+    display: none;
+  }
+
+  .profile-image {
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    content: url(/assets/img/[removal.ai]_tmp-61d354a4b6e2c.png);
+    background-color: #0cbaba;
+    background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+    border: 1px solid white;
+  }
+
+  /* third page */
+  .cards {
+    margin-top: 150px;
+    width: 75%;
+  }
+
+  /* last page */
+  .timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 0px;
+    transform: scale(1);
+    height: 90%;
+  }
+    .content{
+      height: 100%;
+    }
+  .timeline-text {
+    font-size: 16px;
+    line-height: 15px;
+  }
+
+  .four .social-menu {
+    visibility: hidden;
+  }
+
+  #img-1 {
+    width: 100%;
+    height: 500px;
+    margin-top: 205px;
+    margin-left: 0%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .close {
+    margin-top: -150px;
+    right: 80px;
+    color: white;
+  }
+
+  .modal {
+    margin-left: 0px;
+    width: 100%;
+    height: 720px;
+    background: rgba(0, 0, 0, 0.9);
   }
 }

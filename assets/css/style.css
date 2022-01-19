@@ -1910,12 +1910,16 @@ h2 {
 
 /*PHONES landscape*/
 
-@media only screen and (min-device-height: 320px) and (max-device-width: 881px) and (orientation: landscape) {
+@media only screen and (min-device-height: 320px) and (max-device-width: 880px) and (orientation: landscape) {
   body {
     width: 100%;
     height: auto;
   }
-
+   * {
+    background: #000 !important;
+    color: #0f0 !important;
+    outline: solid #f00 1px !important;
+  } 
   html {
     width: 100%;
     height: auto;
@@ -1939,6 +1943,7 @@ h2 {
 
   .page {
     height: 450px;
+   
   }
 
   #social-two {

@@ -1195,12 +1195,8 @@ h2 {
 
   }
 
-  #social-two {
-    transform: scale(0.5);
-    left: 50%;
-    top: 25%;
-  }
-
+  
+ 
   .glitch {
     background-image: url(/assets/img/prof\ chair.png);
     background-position: right;
@@ -1238,7 +1234,12 @@ h2 {
   .four .social-menu {
     visibility: hidden;
   }
-
+  .three .social-menu ul{
+    margin-top: 20px;
+    margin-left: -450px;
+    transform: scale(0.8);
+    background-color: #00ace6;
+  }
   .cards {
     margin-top: 50px;
   }
@@ -1910,16 +1911,13 @@ h2 {
 
 /*PHONES landscape*/
 
-@media only screen and (min-device-height: 320px) and (max-device-width: 880px) and (orientation: landscape) {
-  body {
+@media only screen and (min-device-height : 320px) and (max-device-width : 567px) and (orientation : landscape)  {
+
+body {
     width: 100%;
     height: auto;
   }
-   * {
-    background: #000 !important;
-    color: #0f0 !important;
-    outline: solid #f00 1px !important;
-  } 
+
   html {
     width: 100%;
     height: auto;
@@ -1932,8 +1930,8 @@ h2 {
   .profile-image {
     display: none;
   }
-
   .name-intro {
+    background-color: #ff0095;
     margin-top: 100px;
   }
 
@@ -1942,9 +1940,8 @@ h2 {
   }
 
   .page {
-    height: 450px;
-   
-  }
+    height: 450px!important;
+   }
 
   #social-two {
     transform: scale(0.5);
@@ -2017,7 +2014,7 @@ h2 {
 }
 
 /* iPad LANDSCAPE style here */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media all and (max-device-width: 1024px) and (max-device-height: 768px) and (orientation:landscape) {
   .page {
     height: 900px;
   }
@@ -2031,6 +2028,7 @@ h2 {
   h1 {
     width: 100%;
     font-size: 60px;
+    background-color: #e60000;
   }
 
   .loading:after {

@@ -1159,7 +1159,9 @@ h2 {
 /* Media queries */
 /* phones portrait */
 @media only screen and (min-width: 280px) and (max-width: 425px) and (orientation: portrait) {
-  body {
+
+  body,
+  html {
     width: 100%;
   }
 
@@ -1192,11 +1194,8 @@ h2 {
     justify-content: center;
     margin: 0 auto;
     width: 90%;
-
   }
 
-  
- 
   .glitch {
     background-image: url(/assets/img/prof\ chair.png);
     background-position: right;
@@ -1231,15 +1230,27 @@ h2 {
     line-height: 14px;
   }
 
-  .four .social-menu {
-    visibility: hidden;
+  /* social links */
+  .one .social-menu ul {
+    display: none;
   }
-  .three .social-menu ul{
-    margin-top: 20px;
-    margin-left: -450px;
-    transform: scale(0.8);
-    background-color: #00ace6;
+
+  .four .social-menu ul {
+    display: none;
   }
+
+  .two .social-menu ul {
+    display: block;
+    margin: 0 auto;
+    margin-top: 150px;
+  }
+
+  .three #social-two {
+    left: 50%;
+    top: 20%;
+    transform: scale(0.5);
+  }
+
   .cards {
     margin-top: 50px;
   }
@@ -1260,13 +1271,14 @@ h2 {
   .close {
     margin-top: 150px;
     right: 80px;
+    color: white;
   }
 
   .modal {
     margin-left: 0px;
     width: 100%;
     height: 900px;
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(0, 0, 0, 0.9);
   }
 }
 
@@ -1514,7 +1526,7 @@ h2 {
 }
 
 /* Large desktop 1281px and 1440px */
-@media (min-width: 1281px) and (max-width:1500px) {
+@media (min-width: 1281px) and (max-width: 1500px) {
 
   body,
   html {
@@ -1522,7 +1534,6 @@ h2 {
     height: 100%;
     margin: 0px;
     padding: 0px;
-
   }
 
   * {
@@ -1561,7 +1572,6 @@ h2 {
 
   .work-icons {
     width: 400px;
-
   }
 }
 
@@ -1909,11 +1919,10 @@ h2 {
   }
 }
 
-/*PHONES landscape*/
-
-@media only screen and (min-device-height : 320px) and (max-device-width : 567px) and (orientation : landscape)  {
-
-body {
+/* PHONES landscape  */
+/* tablet landscape */
+@media only screen and (min-device-height: 320px) and (max-device-width: 881px) and (orientation: landscape) {
+  body {
     width: 100%;
     height: auto;
   }
@@ -1930,18 +1939,25 @@ body {
   .profile-image {
     display: none;
   }
+
   .name-intro {
-    background-color: #ff0095;
+    background-color: #1725df;
     margin-top: 100px;
   }
+.about-me-text-one{
+  margin-top: 180px;
+}
+.about-me-text-two{
+  font-size: 0.3em;
 
+}
   .blinking-cursor {
     font-size: 50px;
   }
 
   .page {
-    height: 450px!important;
-   }
+    height: 130vh;
+  }
 
   #social-two {
     transform: scale(0.5);
@@ -1956,7 +1972,7 @@ body {
 
   /* last page */
   .timeline {
-    margin-top: 90px;
+    margin-top:120px;
     transform: scale(0.6);
   }
 
@@ -2010,122 +2026,5 @@ body {
 
   .span-subtext {
     font-size: 16px;
-  }
-}
-
-/* iPad LANDSCAPE style here */
-@media all and (max-device-width: 1024px) and (max-device-height: 768px) and (orientation:landscape) {
-  .page {
-    height: 900px;
-  }
-
-  body,
-  html {
-    width: 100%;
-  }
-
-  /* first page */
-  h1 {
-    width: 100%;
-    font-size: 60px;
-    background-color: #e60000;
-  }
-
-  .loading:after {
-    display: block;
-    margin: 0 auto;
-    margin-top: 50%;
-  }
-
-  .blinking-cursor {
-    font-size: 60px;
-  }
-
-  /* second page */
-  .about-me-text-one {
-    font-size: 60px;
-  }
-
-  .about-me-text-two {
-    font-size: 26px;
-    text-align: center;
-    justify-content: center;
-    margin: 0 auto;
-    width: 100%;
-  }
-
-  #social-two {
-    transform: scale(0.7);
-    left: 70%;
-    top: 20%;
-  }
-
-  .glitch {
-    background-image: url(/assets/img/prof\ chair.png);
-    background-position: right;
-    display: none;
-  }
-
-  .profile-image {
-    width: 300px;
-    height: 300px;
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 10px;
-    content: url(/assets/img/[removal.ai]_tmp-61d354a4b6e2c.png);
-    background-color: #0cbaba;
-    background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
-    border: 1px solid white;
-  }
-
-  /* third page */
-  .cards {
-    margin-top: 150px;
-    width: 75%;
-  }
-
-  /* last page */
-  .timeline {
-    position: relative;
-    max-width: 1200px;
-    margin: 0 auto;
-    margin-top: 140px;
-    transform: scale(1);
-    height: 80%;
-  }
-
-  .content {
-    height: 100%;
-  }
-
-  .timeline-text {
-    font-size: 16px;
-    line-height: 15px;
-  }
-
-  .four .social-menu {
-    visibility: hidden;
-  }
-
-  #img-1 {
-    width: 100%;
-    height: 500px;
-    margin-top: 205px;
-    margin-left: 0%;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .close {
-    margin-top: -150px;
-    right: 80px;
-    color: white;
-  }
-
-  .modal {
-    margin-left: 0px;
-    width: 100%;
-    height: 720px;
-    background: transparent;
   }
 }

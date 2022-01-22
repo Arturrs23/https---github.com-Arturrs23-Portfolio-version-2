@@ -655,7 +655,31 @@ h1 {
   text-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
-
+/* projects text */
+.Projects-text {
+  display: block;
+  width: 30%;
+  height: 250px;
+  font-size: 6vw;
+  text-align: left;
+  align-items: left;
+  font-weight: 600;
+  font-family: Poppins, sans-serif;
+  text-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  margin-top: 0px;
+  margin-left: 10%;
+  color: #ffffff;
+  transition: ease-in-out 0.2s;
+  animation-name: floating;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+/* span extra */
+.extra-projects {
+  color: #0cbaba;
+}
 /* what i do block */
 .fa-html5 {
   float: left;
@@ -1060,7 +1084,6 @@ img {
 .left {
   opacity: 1;
 }
-
 .container-timeline:hover .left {
   opacity: 1;
 }
@@ -1195,7 +1218,9 @@ h2 {
     margin: 0 auto;
     width: 90%;
   }
-
+.Projects-text{
+  margin-top: 200px;
+}
   .glitch {
     background-image: url(/assets/img/prof\ chair.png);
     background-position: right;
@@ -1960,6 +1985,8 @@ h2 {
   .about-me-text-two {
     font-size: 0.3em;
 
+  }
+  .Projects-text{display: none;
   }
 
   .blinking-cursor {
